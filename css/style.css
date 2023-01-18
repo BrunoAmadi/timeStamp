@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.container-tempo {
+  margin: 0 auto;
+  background-image: url("../img/—Pngtree—real\ christmas\ ornate\ colorful\ decorations_294709.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1000px;
+  height: 100vh;
+  padding: 20px 0px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+.titulo {
+  margin-bottom: 60px;
+  text-align: center;
+  border: 2px solid #8b0000;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 30px;
+  color: #eee;
+  background-color: #ff6347;
+}
+
+.container-items {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 30px 0px;
+}
+.container-dias {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  grid-column: 1/-1;
+  background-color: black;
+  max-width: 800px;
+}
+
+.flexItemsHoras {
+  grid-column: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+.dias,
+.segundos,
+.minutos,
+.horas {
+  justify-content: center;
+  background-color: #fff;
+  margin: 0px;
+  padding: 20px 40px;
+  border: 2px solid #8b0000;
+  border-radius: 5px;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Poppins";
+  flex: 0 0 150px;
+  position: relative;
+}
+.dias {
+  grid-row: 1;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.papaiNoel {
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.flexItemsHoras span,
+.dias span {
+  color: green;
+}
+.dias::after,
+.horas::after,
+.minutos::after,
+.segundos::after {
+  content: "Dias";
+  background-color: #ff6347;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -30px;
+  right: 18px;
+  color: #fff;
+  border: 1px solid black;
+  width: 150px;
+}
+.horas::after{
+  content: "Horas";
+
+}
+.minutos::after{
+  content: "minutos";
+
+}.segundos::after{
+  content: "segundos";
+
+}
